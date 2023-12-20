@@ -15,7 +15,7 @@ const CorporateServices = () => {
       backgroundSize: 'cover', 
   };
   return (
-    <div style={imgeStyle} className="text-center mb-[100px] pt-12">
+    <div style={imgeStyle} className="text-center mb-[100px] py-12">
       <div data-aos="fade-up" data-aos-duration="3000" className="pb-5">
         <p data-aos="fade-up" data-aos-duration="3000" className="text-third">CORPORATE SERVICE</p>
         <h1 className="text-primary">Why Us</h1>
@@ -38,7 +38,7 @@ const CorporateServices = () => {
       href="#"
       smooth={true}
       duration={700}
-      data-aos="fade-up" ><p className="bg-[#0C0833] text-white px-12 py-4 rounded-full font-semibold hover:bg-[#1C1880] mb-14 cursor-pointer">Contact Us Now For More Details</p></ScrollLink>
+      data-aos="fade-up" ><p className="bg-[#0C0833] text-white px-12 py-4 rounded-full font-semibold hover:bg-[#1C1880] cursor-pointer">Contact Us Now For More Details</p></ScrollLink>
     </div>
   );
 };
