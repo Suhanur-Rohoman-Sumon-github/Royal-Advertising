@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const ComingSoon = () => {
   const calculateTimeLeft = () => {
-    const difference = +new Date("2024-04-01") - +new Date();
+    const difference = +new Date("2024-03-20") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -47,21 +47,6 @@ const ComingSoon = () => {
     );
   });
 
-  const handleNameChange = (event) => {
-    setName(event.target.value);
-  };
-
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Handle form submission here
-    console.log("Name:", name);
-    console.log("Email:", email);
-  };
-
   return (
     <div
       className="hero min-h-screen"
@@ -85,32 +70,6 @@ const ComingSoon = () => {
           <h2 className="mb-5 py-8">
             {timerComponents.length ? timerComponents : <span>Time's up!</span>}
           </h2>
-          <form onSubmit={handleSubmit}>
-            <input
-              type="text"
-              placeholder="Name"
-              value={name}
-              onChange={handleNameChange}
-              className="input input-bordered w-full max-w-xs"
-              required
-            />
-
-            <input
-              type="email"
-              placeholder="Email"
-              value={email}
-              onChange={handleEmailChange}
-              className="input input-bordered w-full max-w-xs md:ml-2 md:mt-0 mt-2"
-              required
-            />
-
-            <button
-              type="submit"
-              className="btn md:ml-4 btn-primary xl:mt-0 mt-2"
-            >
-              notify me
-            </button>
-          </form>
         </div>
       </div>
     </div>
