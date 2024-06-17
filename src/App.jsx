@@ -6,10 +6,9 @@ import ComingSoon from "./components/home/comingSoon/ComingSoon";
 const App = () => {
   return (
     <div className="overflow-hidden">
-      {/* <Home />
+      <Home />
       <Footer />
-      <Toaster /> */}
-      <ComingSoon />
+      <Toaster />
     </div>
   );
 };
